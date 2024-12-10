@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Capture Page</title>
+  <link rel="stylesheet" href="capture.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Capture Your Image</h1>
+    <div class="camera-section">
+      <video id="camera" autoplay playsinline></video>
+      <canvas id="canvas" style="display: none;"></canvas>
+      <img id="captured-image" style="display: none; width: 100%; margin-top: 20px;" />
+    </div>
+    <div class="button-section">
+      <button id="capture-btn">Capture</button>
+      <button id="download-btn" style="display: none;">Download Image</button>
+    </div>
+  </div>
+
+  <script src="capture.js"></script>
+</body>
+</html>
